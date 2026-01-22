@@ -1,4 +1,4 @@
-div{
+div {
 
     height: 300px;
     width: 300px;
@@ -22,7 +22,53 @@ div{
 
     border: 4px solid black;
     border-radius: 50%;
-    
-    
 
+
+    /* border radius -> box ka corner round hone lgagega */
+
+    /* clockwise -> top left, top right , bottom right , bottom left */
+    /* border-radius: 20px 30px 60px 80px; */
+
+    /* padding - left, right , top , bottom */
+    /* padding-left: 20px;
+     padding-top: 40px;
+     padding-bottom: 50px; */
+
+    /* padding : 40px (it will apply on all the sides)
+        padding : 20px(top/bottom) 40px(left/right) 
+        padding : 20px(top) 60px(left/right) 80px(bottom)
+        padding: top right bottom left - clock wise logic lg jaega   */
+
+    /* padding: 40px 80px 120px 180px; */
+
+    /* margin - left, right , top , bottom */
+    /* margin-left: 20px;
+     margin-top: 40px;
+     margin-bottom: 50px; */
+
+    /* margin : 40px (it will apply on all the sides)
+        margin : 20px(top/bottom) 40px(left/right) 
+        margin : 20px(top) 60px(left/right) 80px(bottom)
+        margin: top right bottom left - clock wise logic lg jaemargin*/
+
+
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-top: 40px;
+
+    /* display -> inline , block , inline-block */
+    display: inline-block;
+
+    /* box shadow -> xaxis , y axis , blur intensity , color  */
+
+
+
+}
+
+div:hover {
+    box-shadow: 10px 10px 1px rgb(0, 38, 255);
+}
+
+button:hover {
+    box-shadow: rgb(0, 38, 255);
 }
