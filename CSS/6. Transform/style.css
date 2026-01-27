@@ -1,0 +1,32 @@
+div{
+    height: 100px;
+    width: 200px;
+    background-color: yellow;
+    color: black;
+    border: 2px solid black;
+
+    margin-top: 100px;
+    margin-left: 100px;
+
+    text-align: center;
+
+
+
+    /* rotate */
+    /* transform: rotate(-120deg); */
+
+    /* transform: translate(0px,0px); */
+
+    /* transform: scale(1.5); */
+
+    /* transform : skew */
+    transform: skew(-45deg);
+    border-radius: 30px;
+    
+}
+
+
+button:hover{
+    transform: scale(1.1);
+    transition: 0.2s all linear;
+}

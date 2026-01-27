@@ -1,0 +1,32 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border: 2px solid black;
+
+    /* transition -  */
+    /* transition-duration:1.5s; */
+    /* transition-delay:1s ; */
+    /* transition-timing-function: ease-in-out; 
+        ease, ease in , ease out , ease in out */
+
+    /* shorthand -> Transition ->  */
+    transition: 2s ease-in-out;
+}
+
+
+
+div:hover{
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+
+button{
+     transition: 0.1s ease-in-out;
+}
+
+button:hover{
+    font-size: 30px;
+
+}

@@ -8,7 +8,7 @@
 
 
 } */
-
+/* 
 .alpha{
     height: 100px;
     width: 100px;
@@ -31,7 +31,7 @@
 
 div{
     display: inline-block;
-}
+} */
 
 
 /* alpha property - it will only apply on the color value (rgb)
@@ -51,3 +51,19 @@ div{
    
    
    */
+
+
+/* container size */
+div{
+    height: 400px;
+    width: 200px;
+    background-color: lightcyan;
+    border: 2px solid black;
+
+    /* background-image -> url(src)
+       background-size -> contain -> 
+            ,cover,auto */
+
+    background-image: url(image2.avif);
+    background-size: cover;
+}
