@@ -1,0 +1,28 @@
+/* parent */
+.container{
+    height: 400px;
+    width: 600px;
+    background-color: lightcyan;
+    border: 2px solid black;
+
+
+    /* flexbox */
+    display: flex;
+    /* direction -> default(row)/row-reverse/col/col-reverse */
+    flex-direction: row-reverse;
+    /* justify-content -> space between/evenly/around , flex-start/end/center  */
+    justify-content:space-evenly flex-end;
+
+    /* align , flex-wrap , flex- sizing */
+
+
+}
+
+/* descendents Selector child ->  */
+.container div{
+    height: 50px;
+    width: 100px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
