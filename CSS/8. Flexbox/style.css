@@ -1,7 +1,7 @@
 /* parent */
 .container{
     height: 400px;
-    width: 600px;
+    width: 650px;
     background-color: lightcyan;
     border: 2px solid black;
 
@@ -9,11 +9,18 @@
     /* flexbox */
     display: flex;
     /* direction -> default(row)/row-reverse/col/col-reverse */
-    flex-direction: row-reverse;
+    flex-direction: row;
     /* justify-content -> space between/evenly/around , flex-start/end/center  */
-    justify-content:space-evenly flex-end;
+    justify-content:flex-start;
 
     /* align , flex-wrap , flex- sizing */
+    /* align-items: center; */
+
+    /* flex-wrap - wrap , no wrap , wrap-reverse */
+    /* flex-wrap: wrap; */
+
+    /* flex-sizing -> basis , grow , shrink */
+
 
 
 }
@@ -25,4 +32,25 @@
     font-weight: bold;
     text-align: center;
     font-size: 30px;
+}
+
+#four{
+    /* set the fixed size of the container */
+    /* flex-basis: 150px; */
+}
+
+/* Grow -> Shrink ->  
+  100px - 3 -> 
+  2 -> 33.33 * 2
+  5 -> 33.33 * 1 */
+#two{
+    /* 100 + 66.66 */
+    /* flex-grow: 2; */
+    flex: 150px 1;
+}
+
+#five{
+    /* 100 + 33.33 */
+    /* flex-grow: 1; */
+    flex-grow: 1;
 }
