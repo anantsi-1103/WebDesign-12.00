@@ -1,35 +1,35 @@
-let heading = document.querySelector('#heading')
-let btn = document.querySelector('#btn')
-let price = document.querySelector('#price')
+let title = document.querySelector('.title')
+let img = document.querySelector('.image')
+let price = document.querySelector('.price')
+let desc = document.querySelector('.desc')
+let catogory = document.querySelector('.category')
 
-let id = parseInt(prompt("Enter your ID"))
 
 
+
+
+
+let id = parseInt(prompt("Enter your Product Number"))
 
 const url = `https://fakestoreapi.com/products/${id}`
 
+const getData = async () =>{
+    console.log("Fetching the Data")
 
-const getData = async () => {
+    let response = await fetch(url)
+    console.log(response)
 
-    console.log("Fetching Data .......")
-    let res = await fetch(url)
-    // console.log(res) // promise -> 
-
-    let data = await res.json()
-    // console.log(data)
+    let data = await response.json()
+    console.log(data)
 
 
-    heading.innerHTML = data.title
-    price.innerHTML = data.price
-
+    title.innerHTML = data.title
+    img.src = data.image
+    price.innerText = `$ ${data.price}`
+    desc.innerHTML = data.description
+    catogory.innerHTML = data.category
 }
 
-btn.addEventListener('click', getData)
 
 
-
-// const getData = async()=>{
-//     console.log("Getting Data")
-//     let res = await fetch(url)
-//     console.log(res.json())
-// }
+getData()
